@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>hover after</title>
+    <style>
+      a:hover::after{content:attr(data-title);padding:15px;background:#eee;word-wrap: break-word;border: 1px solid #333;pointer-events: none;position:absolute;margin:15px 0 0 -400px;width:500px;}
+      div{height:100px;padding:40px;text-align: center;}
+      a, a:hover, a:after, a:active{color:#000;font-size:20px;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="javascript:void(0)" data-title="buraya yazı getir">fare işaretçisini buraya sürükleyiniz.</a></br>
+      <a href="javascript:void(0)" data-title="buraya da">fare işaretçisini buraya sürükleyiniz.</a></br>
+      <a href="javascript:void(0)" data-title="daha sonra buraya da">fare işaretçisini buraya sürükleyiniz.</a>
+    </div>
+  </body>
+</html>
